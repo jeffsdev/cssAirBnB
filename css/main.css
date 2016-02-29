@@ -1,4 +1,4 @@
-.startAdventure {
+.startAdventure, .weekend {
   width: 70%; }
 
 *,
@@ -36,6 +36,7 @@ button {
 
 .startAdventure {
   margin-top: 5%;
+  margin-bottom: 4%;
   display: flex;
   height: 270px; }
   .startAdventure .image {
@@ -45,10 +46,11 @@ button {
     align-items: center;
     background-image: url("../img/jungle.jpg");
     background-size: cover;
-    flex-basis: 66%; }
+    flex-basis: 66.6666%; }
   .startAdventure .startText {
     background: white;
     display: flex;
+    flex-basis: 33.3333%;
     color: #565A5C;
     flex-direction: column;
     text-align: center;
@@ -68,6 +70,50 @@ button {
       color: #FF5A5F; }
     .startAdventure .startText p {
       font-size: 0.8em; }
+
+.weekend {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #565A5C;
+  align-items: center; }
+  .weekend .weekendGallery {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 2%;
+    width: 100%; }
+    .weekend .weekendGallery .seattle {
+      background-image: url("../img/seattle.jpg");
+      background-size: cover;
+      height: 344px;
+      width: 32%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .weekend .weekendGallery .victoria {
+      background-image: url("../img/victoria.jpg");
+      background-size: cover;
+      height: 344px;
+      width: 32%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .weekend .weekendGallery .vancouver {
+      background-image: url("../img/vancouver.jpg");
+      background-size: cover;
+      height: 344px;
+      width: 32%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .weekend button {
+    width: 32%;
+    margin-top: 4%;
+    border: 1px solid #565A5C;
+    color: #565A5C; }
+  .weekend h1 {
+    margin-bottom: 0; }
 
 .hero {
   width: 100%;
