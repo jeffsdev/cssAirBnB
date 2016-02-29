@@ -1,5 +1,14 @@
-.startAdventure, .weekend {
+.startAdventure, .section {
   width: 70%; }
+
+.weekend .weekendGallery .seattle, .weekend .weekendGallery .victoria, .weekend .weekendGallery .vancouver, .world .losAngeles, .world .paulJessica, .world .newYork, .world .paris, .world .sanDiego, .world .capeTown, .world .austin, .world .chicago, .world .washington, .world .palmSprings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2%; }
 
 *,
 *::before,
@@ -71,49 +80,90 @@ button {
     .startAdventure .startText p {
       font-size: 0.8em; }
 
-.weekend {
+.section {
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #565A5C;
   align-items: center; }
-  .weekend .weekendGallery {
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    margin-top: 2%;
-    width: 100%; }
-    .weekend .weekendGallery .seattle {
-      background-image: url("../img/seattle.jpg");
-      background-size: cover;
-      height: 344px;
-      width: 32%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .weekend .weekendGallery .victoria {
-      background-image: url("../img/victoria.jpg");
-      background-size: cover;
-      height: 344px;
-      width: 32%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .weekend .weekendGallery .vancouver {
-      background-image: url("../img/vancouver.jpg");
-      background-size: cover;
-      height: 344px;
-      width: 32%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-  .weekend button {
-    width: 32%;
-    margin-top: 4%;
-    border: 1px solid #565A5C;
-    color: #565A5C; }
-  .weekend h1 {
-    margin-bottom: 0; }
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 2%;
+  width: 100%;
+  flex-wrap: wrap; }
+
+.weekend .weekendGallery .seattle {
+  background-image: url("../img/seattle.jpg");
+  height: 344px;
+  width: 32%; }
+.weekend .weekendGallery .victoria {
+  background-image: url("../img/victoria.jpg");
+  height: 344px;
+  width: 32%; }
+.weekend .weekendGallery .vancouver {
+  background-image: url("../img/vancouver.jpg");
+  height: 344px;
+  width: 32%; }
+.weekend button {
+  width: 32%;
+  margin-top: 4%;
+  border: 1px solid #565A5C;
+  color: #565A5C; }
+.weekend h1 {
+  margin-bottom: 0; }
+
+.world .losAngeles {
+  background-image: url("../img/losAngeles.jpg");
+  height: 344px;
+  width: 66%; }
+.world .paulJessica {
+  background-image: url("../img/paulJessica.png");
+  height: 344px;
+  width: 32%; }
+.world .newYork {
+  background-image: url("../img/newYork.jpg");
+  height: 344px;
+  width: 32%; }
+.world .paris {
+  background-image: url("../img/paris.jpg");
+  height: 344px;
+  width: 32%; }
+.world .sanDiego {
+  background-image: url("../img/sanDiego.jpg");
+  height: 344px;
+  width: 32%; }
+.world .capeTown {
+  background-image: url("../img/capeTown.png");
+  height: 344px;
+  width: 32%; }
+.world .austin {
+  background-image: url("../img/austin.jpg");
+  height: 344px;
+  width: 66%; }
+.world .chicago {
+  background-image: url("../img/chicago.jpg");
+  height: 344px;
+  width: 32%; }
+.world .washington {
+  background-image: url("../img/washington.jpg");
+  height: 344px;
+  width: 32%; }
+.world .palmSprings {
+  background-image: url("../img/palmSprings.jpg");
+  height: 344px;
+  width: 32%; }
+.world p {
+  margin-top: 0; }
+.world h3 {
+  margin-bottom: 2%; }
+.world h1 {
+  margin-top: 4%;
+  margin-bottom: 0; }
+.world h4 {
+  margin-top: 1%; }
 
 .hero {
   width: 100%;
