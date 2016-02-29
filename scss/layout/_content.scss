@@ -101,6 +101,19 @@
     background-image: url("#{$path-img}/paulJessica.png");
     @include size(32% 344px);
     @extend %destinationBoxes;
+    padding-top: 50px;
+    img {
+      border-radius: 50%;
+    }
+    h2 {
+      align-self: flex-start;
+      padding: 10px 15px;
+      background: rgba(0,0,0, 0.5);
+    }
+    span {
+      font-size: .5em;
+      vertical-align: top;
+    }
   }
   .newYork {
     background-image: url("#{$path-img}/newYork.jpg");
@@ -121,6 +134,9 @@
     background-image: url("#{$path-img}/capeTown.png");
     @include size(32% 344px);
     @extend %destinationBoxes;
+    img {
+      border-radius: 50%;
+    }
   }
   .austin {
     background-image: url("#{$path-img}/austin.jpg");
@@ -154,5 +170,35 @@
   }
   h4 {
     margin-top: 1%;
+  }
+}
+
+.video {
+  display: flex;
+  height: 600px;
+  width: 100%;
+  margin: 4% 0;
+  background-image: url('#{$path-img}/monteverde.jpg');
+  background-size: cover;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  i {
+    font-size: 5em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .videoText {
+    @extend %destinationBoxes;
+    h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+    .fa-play {
+      font-size: 3em;
+      color: rgba(0, 0, 0, 0.4);
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px 20px 18px 30px;
+      border-radius: 50%;
+    }
   }
 }
