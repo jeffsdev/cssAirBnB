@@ -1,9 +1,11 @@
 .hero {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-image: url('http://lorempixel.com/image_output/city-q-c-1920-1080-8.jpg');
+  background-image: url('#{$path-img}/Portland.jpg');
+  background-size: cover;
   color: #fff;
   height: 600px;
   .headerText {
