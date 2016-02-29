@@ -8,11 +8,13 @@
   height: 600px;
   .headerText {
     text-align: center;
-    button {
-      background: none;
-      color: white;
-      border: 2px solid white;
-      padding: 5px 10px;
+    h1 {
+      @include text(4.3em, $l-spacing: 3px);
+      margin-bottom: 0;
+    }
+    p {
+      @include text(1.1em);
+      margin-top: 0;
     }
   }
 }
