@@ -1,0 +1,14 @@
+.footer {
+  background: #2B2D2E;
+  background-image: url('#{$path-img}/footerbg.png');
+  width: 100%;
+  margin-top: 4%;
+  .footerTop {
+    @extend %container;
+    min-height: 200px;
+  }
+  .footerBottom {
+    @extend %container;
+    min-height: 200px;
+  }
+}

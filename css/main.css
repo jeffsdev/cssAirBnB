@@ -1,4 +1,4 @@
-.startAdventure, .section {
+.startAdventure, .section, .footer .footerTop, .footer .footerBottom {
   width: 70%; }
 
 .weekend .weekendGallery .seattle, .weekend .weekendGallery .victoria, .weekend .weekendGallery .vancouver, .world .losAngeles, .world .paulJessica, .world .newYork, .world .paris, .world .sanDiego, .world .capeTown, .world .austin, .world .chicago, .world .washington, .world .palmSprings, .video .videoText {
@@ -190,15 +190,78 @@ button {
   .video i {
     font-size: 5em;
     color: rgba(255, 255, 255, 0.5); }
-  .video .videoText h1 {
-    font-size: 4em;
-    margin: 0; }
-  .video .videoText .fa-play {
-    font-size: 3em;
-    color: rgba(0, 0, 0, 0.4);
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px 20px 18px 30px;
-    border-radius: 50%; }
+  .video .videoText {
+    text-align: center; }
+    .video .videoText h1 {
+      font-size: 4em;
+      margin: 0; }
+    .video .videoText .fa-play {
+      font-size: 3em;
+      color: rgba(0, 0, 0, 0.4);
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px 20px 18px 30px;
+      border-radius: 50%; }
+
+.communityGallery {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%; }
+  .communityGallery #create {
+    background-color: #00D1C1;
+    height: 500px;
+    width: 23%;
+    max-width: 325px; }
+    .communityGallery #create img {
+      padding: 2%; }
+  .communityGallery #traveling {
+    background-image: url("../img/traveling.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 23%;
+    max-width: 325px; }
+  .communityGallery #businessTravel {
+    background-image: url("../img/businessTravel.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 23%;
+    max-width: 325px; }
+  .communityGallery #hostingBox {
+    background-image: url("../img/hostingBox.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 23%;
+    max-width: 325px; }
+  .communityGallery .communityBox {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center; }
+    .communityGallery .communityBox .communityText {
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      .communityGallery .communityBox .communityText h5 {
+        width: 130px;
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 230px;
+        background: #007A87; }
+
+.footer {
+  background: #2B2D2E;
+  background-image: url("../img/footerbg.png");
+  width: 100%;
+  margin-top: 4%; }
+  .footer .footerTop {
+    min-height: 200px; }
+  .footer .footerBottom {
+    min-height: 200px; }
 
 .hero {
   width: 100%;

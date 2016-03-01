@@ -189,6 +189,7 @@
   }
   .videoText {
     @extend %destinationBoxes;
+    text-align: center;
     h1 {
       font-size: 4em;
       margin: 0;
@@ -199,6 +200,66 @@
       background: rgba(255, 255, 255, 0.3);
       padding: 20px 20px 18px 30px;
       border-radius: 50%;
+    }
+  }
+}
+
+.communityGallery {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%;
+  #create {
+    background-color: $communityTeal;
+    @include size(23% 500px);
+    max-width: 325px;
+    img {
+      padding: 2%;
+    }
+  }
+  #traveling {
+    background-image: url('#{$path-img}/traveling.jpg');
+    background-size: cover;
+    @include size(23% 500px);
+    max-width: 325px;
+    h5 {
+
+    }
+  }
+  #businessTravel {
+    background-image: url('#{$path-img}/businessTravel.jpg');
+    background-size: cover;
+    @include size(23% 500px);
+    max-width: 325px;
+  }
+  #hostingBox {
+    background-image: url('#{$path-img}/hostingBox.jpg');
+    background-size: cover;
+    @include size(23% 500px);
+    max-width: 325px;
+  }
+  .communityBox {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    .communityText {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        width: 130px;
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 230px;
+        background: #007A87;
+      }
     }
   }
 }
